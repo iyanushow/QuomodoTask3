@@ -257,7 +257,7 @@ header .main .main-image img {
 
 .procurement .text h5 {
   color: #696767;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 200;
 }
 
@@ -281,26 +281,31 @@ header .main .main-image img {
   grid-gap: 7%;
 }
 
-.infosec {
+.infosec, .build {
   font-family: 'Recoleta';
   font-size: 16px;
 }
 
-.infosec .another h1 {
-  font-size: 2.5em !important;
+.infosec .container, .build .container {
+  width: 90% !important;
+  max-width: 90% !important;
+}
+
+.infosec .another h1, .build .another h1 {
+  font-size: 3em !important;
   font-weight: bold;
 }
 
-.infosec .another h5 {
-  font-size: 0.85em;
+.infosec .another h5, .build .another h5 {
+  font-size: 1.25em;
 }
 
-.infosec .anotherone {
+.infosec .anotherone, .build .anotherone {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'image text';
-  -ms-grid-columns: 50px auto;
-      grid-template-columns: 50px auto;
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -309,33 +314,33 @@ header .main .main-image img {
           justify-content: justify;
 }
 
-.infosec .anotherone .innertext {
+.infosec .anotherone .innertext, .build .anotherone .innertext {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text;
 }
 
-.infosec .anotherone h1 {
-  font-size: 1em !important;
+.infosec .anotherone h1, .build .anotherone h1 {
+  font-size: 1.5em !important;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.infosec .anotherone h5 {
-  font-size: 0.85em;
+.infosec .anotherone h5, .build .anotherone h5 {
+  font-size: 1em;
   grid-area: small;
 }
 
-.infosec .anotherone p {
+.infosec .anotherone p, .build .anotherone p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
   background-color: #4031B7;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -348,7 +353,15 @@ header .main .main-image img {
   margin-right: 0;
 }
 
-.infosec img {
+.infosec img, .build img {
   height: 60%;
+}
+
+.build {
+  background-color: #FBFAF9;
+}
+
+.build .bigtext {
+  text-align: end;
 }
 /*# sourceMappingURL=proqura.css.map */
