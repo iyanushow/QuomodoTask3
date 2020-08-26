@@ -1,0 +1,365 @@
+html {
+  color: black;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Recoleta;
+  src: url("./assets/Recoleta-Light.woff") format("woff");
+}
+
+header {
+  background: #4031B7;
+  width: 100%;
+  height: 770px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* NAVIGATION STYLE */
+}
+
+header nav {
+  background: transparent;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  padding-top: 5%;
+}
+
+header nav .logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4/10;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Circula', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header nav ul li {
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.5em;
+  font-weight: lighter;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header .main {
+  margin-top: 10%;
+  margin-left: 7%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+header .main .container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+header .main .container a {
+  color: white;
+  margin: auto 5%;
+  text-decoration: none;
+}
+
+header .main .container h1 {
+  font-size: 3.9rem;
+  font-weight: 200 !important;
+  font-family: 'Recoleta';
+  color: white;
+  width: 100%;
+  max-width: 610px;
+}
+
+header .main .container h1 span {
+  color: #60CBBE;
+}
+
+header .main .container p {
+  line-height: 24px;
+  font-size: 0.9rem;
+  font-family: Verdana;
+  font-weight: lighter;
+  max-width: 610px;
+  margin-bottom: 50px;
+  color: #b3b3b3;
+}
+
+header .main .container button {
+  border-radius: 50px;
+  height: 45px;
+  width: 15%;
+  color: white;
+  padding: 10px;
+  border: none;
+  background-color: #60CBBE;
+}
+
+header .main .container button:hover {
+  background-color: #4a9b91;
+}
+
+header .main .main-image {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+header .main .main-image img {
+  height: auto;
+  max-width: 100%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.solutions {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.solutions h1 {
+  color: black;
+  text-align: center;
+  font-family: 'Recoleta';
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.solutions h6 {
+  color: #696767;
+  font-family: 'Recoleta';
+  font-size: .8em;
+  text-align: center;
+}
+
+.solutions .info {
+  width: 100%;
+  margin: 5% auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (180px)[5];
+      grid-template-columns: repeat(5, 180px);
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.solutions .info :nth-child(1) {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.solutions .info :nth-child(2) {
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.solutions .info :nth-child(3) {
+  -ms-grid-column: 5;
+  grid-column: 5;
+}
+
+.solutions .info .circle {
+  background-color: #4031B7;
+  height: 162px;
+  width: 90%;
+  border-radius: 50%;
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.solutions .info .circle img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.solutions .info h5 {
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Recoleta';
+}
+
+.solutions .info h6 {
+  font-size: .85em;
+}
+
+.procurement {
+  background-color: #FBFAF9;
+  margin-top: 12%;
+}
+
+.procurement .text {
+  padding-top: 5%;
+  text-align: center;
+  font-family: 'Recoleta';
+}
+
+.procurement .text h1 {
+  color: black;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.procurement .text h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.procurement .text h5 {
+  color: #696767;
+  font-size: 0.85em;
+  font-weight: 200;
+}
+
+.procurement img {
+  padding-top: 40px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.procurement .services {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 24% 24% 24%;
+      grid-template-columns: 24% 24% 24%;
+  grid-gap: 7%;
+}
+
+.infosec {
+  font-family: 'Recoleta';
+  display: 16px;
+}
+
+.infosec .another h1 {
+  font-size: 2.5em !important;
+  font-weight: bold;
+}
+
+.infosec .another h5 {
+  font-size: 0.85em;
+}
+
+.infosec .anotherone {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'image text';
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+}
+
+.infosec .anotherone .innertext {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+}
+
+.infosec .anotherone h1 {
+  font-size: 1em !important;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infosec .anotherone h5 {
+  font-size: 0.85em;
+  grid-area: small;
+}
+
+.infosec .anotherone p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background-color: #4031B7;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0;
+}
+
+.infosec img {
+  height: 60%;
+}
+
+/* nav ul li:nth-of-type(1){
+    grid-column:1/3 ;
+    
+}
+nav ul li:nth-of-type(2){
+    grid-column:3/4 ;
+}
+nav ul li:nth-of-type(3){
+    grid-column:5/6 ;
+} */
+/*# sourceMappingURL=proqura.css.map */
