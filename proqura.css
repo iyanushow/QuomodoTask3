@@ -281,26 +281,27 @@ header .main .main-image img {
   grid-gap: 7%;
 }
 
-.infosec, .build {
+.infosec {
+  margin-bottom: 8%;
   font-family: 'Recoleta';
   font-size: 16px;
 }
 
-.infosec .container, .build .container {
+.infosec .container {
   width: 90% !important;
   max-width: 90% !important;
 }
 
-.infosec .another h1, .build .another h1 {
+.infosec .another h1 {
   font-size: 3em !important;
   font-weight: bold;
 }
 
-.infosec .another h5, .build .another h5 {
+.infosec .another h5 {
   font-size: 1.25em;
 }
 
-.infosec .anotherone, .build .anotherone {
+.infosec .anotherone {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'image text';
@@ -314,13 +315,13 @@ header .main .main-image img {
           justify-content: justify;
 }
 
-.infosec .anotherone .innertext, .build .anotherone .innertext {
+.infosec .anotherone .innertext {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: text;
 }
 
-.infosec .anotherone h1, .build .anotherone h1 {
+.infosec .anotherone h1 {
   font-size: 1.5em !important;
   font-weight: bold;
   display: -webkit-box;
@@ -328,12 +329,12 @@ header .main .main-image img {
   display: flex;
 }
 
-.infosec .anotherone h5, .build .anotherone h5 {
+.infosec .anotherone h5 {
   font-size: 1em;
   grid-area: small;
 }
 
-.infosec .anotherone p, .build .anotherone p {
+.infosec .anotherone p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
@@ -353,15 +354,81 @@ header .main .main-image img {
   margin-right: 0;
 }
 
-.infosec img, .build img {
+.infosec img {
   height: 60%;
 }
 
 .build {
   background-color: #FBFAF9;
+  font-family: 'Recoleta';
+  font-size: 16px;
 }
 
-.build .bigtext {
+.build .container {
+  width: 90% !important;
+  max-width: 90% !important;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'image2 text2';
+  -ms-grid-columns: auto 600px;
+      grid-template-columns: auto 600px;
+  grid-gap: 5%;
+}
+
+.build .container img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image2;
+}
+
+.build .container .text {
   text-align: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text2;
+}
+
+.build .container .text .bigtext {
+  grid-area: bigtext;
+}
+
+.build .container .text .bigtext h1 {
+  font-size: 3em !important;
+  font-weight: bold;
+}
+
+.build .container .text .bigtext h5 {
+  font-size: 1.25em;
+}
+
+.build .container .text div.icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 15%;
+}
+
+.build .container .text .icons div {
+  display: block;
+}
+
+.build .container p {
+  background-color: #4031B7;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 0;
 }
 /*# sourceMappingURL=proqura.css.map */
